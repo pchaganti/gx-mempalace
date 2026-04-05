@@ -25,19 +25,18 @@ import os
 import sys
 import json
 import shutil
+import ssl
 import tempfile
 import argparse
 import urllib.request
-import ssl
-
-# Bypass SSL for restricted environments
-ssl._create_default_https_context = ssl._create_unverified_context
-
 from pathlib import Path
 from collections import defaultdict
 from datetime import datetime
 
 import chromadb
+
+# Bypass SSL for restricted environments
+ssl._create_default_https_context = ssl._create_unverified_context
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
