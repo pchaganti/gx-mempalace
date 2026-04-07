@@ -89,6 +89,8 @@ Now your AI has 19 tools available through MCP. Ask it anything:
 
 Claude calls `mempalace_search` automatically, gets verbatim results, and answers you. You never type `mempalace search` again. The AI handles it.
 
+MemPalace also works natively with **Gemini CLI** (which handles the server and save hooks automatically) — see the [Gemini CLI Integration Guide](examples/gemini_cli_setup.md).
+
 ### With local models (Llama, Mistral, or any offline LLM)
 
 Local models generally don't speak MCP yet. Two approaches:
